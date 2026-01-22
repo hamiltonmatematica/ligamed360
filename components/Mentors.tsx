@@ -71,8 +71,8 @@ const Mentors: React.FC = () => {
                   <img
                     src={mentor.img}
                     alt={mentor.name}
-                    className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-125' :
-                      mentor.name === 'Alysson Luiz' ? 'object-[center_60%]' : ''
+                    className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-150 object-[center_65%]' :
+                        mentor.name === 'Alysson Luiz' ? 'object-[center_15%]' : ''
                       }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
