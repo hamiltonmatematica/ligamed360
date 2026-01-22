@@ -71,7 +71,7 @@ const Mentors: React.FC = () => {
                   <img
                     src={mentor.img}
                     alt={mentor.name}
-                    className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-150 object-[center_65%]' :
+                    className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-150 object-[center_30%]' :
                         mentor.name === 'Alysson Luiz' ? 'object-[center_15%]' : ''
                       }`}
                   />
