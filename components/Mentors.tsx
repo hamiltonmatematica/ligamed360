@@ -36,7 +36,7 @@ const mentorsList: Mentor[] = [
     name: "Hamilton Vinícius",
     role: "Professor de Matemática - Especialista em ENEM, TRI e análise de desempenho educacional",
     description: "Especialista em ENEM, TRI e análise de desempenho. Responsável pelas mentorias estratégicas em Matemática e leitura de dados dos simulados.",
-    img: "/hamilton.jpg"
+    img: "/hamilton.png"
   },
   {
     name: "Alysson Luiz",
@@ -72,7 +72,7 @@ const Mentors: React.FC = () => {
                     src={mentor.img}
                     alt={mentor.name}
                     className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-150 object-[center_30%]' :
-                        mentor.name === 'Alysson Luiz' ? 'object-[center_15%]' : ''
+                      mentor.name === 'Alysson Luiz' ? 'object-[center_15%]' : ''
                       }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
