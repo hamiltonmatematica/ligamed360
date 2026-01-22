@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
               />
               <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/80 to-transparent w-full">
                 <h3 className="text-white font-anton text-2xl mb-1 uppercase tracking-wide">BÁRBARA LAYANE</h3>
-                <p className="text-gray-200 text-sm leading-relaxed">Acadêmica de Medicina pela Unimontes e mentora de estudantes de alta performance</p>
+                <p className="text-gray-200 text-base leading-relaxed">Acadêmica de Medicina pela Unimontes e mentora de estudantes de alta performance</p>
               </div>
             </div>
           </div>
