@@ -14,7 +14,7 @@ const mentorsList: Mentor[] = [
   {
     name: "Bárbara Layane",
     role: "Acadêmica de Medicina pela Unimontes",
-    description: "9 aprovações em Medicina por diferentes processos seletivos.",
+    description: "Bárbara Layane é acadêmica de Medicina pela Unimontes e possui um histórico sólido de 9 aprovações em Medicina por diferentes processos seletivos, incluindo vestibulares tradicionais, programas de bolsas integrais e sistemas unificados de acesso ao ensino superior. Atua como mentora de estudos especializada em preparação para Medicina, auxiliando vestibulandos na construção de uma rotina eficiente, realista e adaptada à sua realidade individual. Na LIGA MED 360, Bárbara é responsável por orientar os alunos na organização prática dos estudos, ajudando a transformar planejamento em execução consistente, mantendo constância, foco e direção até o momento da aprovação.",
     img: "/barbara_mentora.jpeg",
     approvals: [
       "Unimontes vestibular tradicional",
@@ -26,10 +26,10 @@ const mentorsList: Mentor[] = [
       "Uninove FIES"
     ],
     specialties: [
-      "Planejamento de rotina",
-      "Organização estratégica",
-      "Técnicas de prova",
-      "Acompanhamento contínuo"
+      "Planejamento estratégico de estudos ao longo do ano",
+      "Organização da rotina com metas semanais e prioridades claras",
+      "Técnicas de prova e controle emocional em dias de simulado e aplicação real",
+      "Acompanhamento contínuo do estudante, com ajustes constantes conforme desempenho e evolução"
     ]
   },
   {
