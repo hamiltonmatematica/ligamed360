@@ -35,7 +35,7 @@ const Audience: React.FC = () => {
           <div className="relative">
             <div className="aspect-square bg-[#2000f5] rounded-2xl overflow-hidden relative">
               <img 
-                src="https://picsum.photos/seed/medstudent/800/800" 
+                src="/aprovada.jpeg" 
                 alt="Medicina" 
                 className="w-full h-full object-cover mix-blend-multiply opacity-70"
               />

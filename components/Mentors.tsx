@@ -15,7 +15,7 @@ const mentorsList: Mentor[] = [
     name: "Bárbara Layane",
     role: "Acadêmica de Medicina pela Unimontes",
     description: "9 aprovações em Medicina por diferentes processos seletivos.",
-    img: "https://picsum.photos/seed/barbara/400/400",
+    img: "/barbara_mentora.jpeg",
     approvals: [
       "Unimontes vestibular tradicional",
       "Unifipmoc vestibular",
@@ -52,7 +52,7 @@ const Mentors: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/4">
-            <h2 className="font-anton text-5xl md:text-7xl mb-8">Nossos <br/><span className="text-[#ff5b05]">Mentores</span></h2>
+            <h2 className="font-anton text-5xl md:text-7xl mb-8">Nossos <br /><span className="text-[#ff5b05]">Mentores</span></h2>
             <p className="text-xl text-gray-400 leading-relaxed mb-8">
               Equipe de especialistas focados no seu resultado. Mentoria real para sua aprovação.
             </p>
@@ -63,18 +63,18 @@ const Mentors: React.FC = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="lg:w-3/4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
             {mentorsList.map((mentor, i) => (
               <div key={i} className="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:border-[#2000f5]/50 transition-all">
                 <div className="aspect-[4/4] bg-gray-800 rounded-2xl mb-6 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-500">
-                   <img src={mentor.img} alt={mentor.name} className="w-full h-full object-cover" />
-                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
+                  <img src={mentor.img} alt={mentor.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
                 </div>
                 <h3 className="font-anton text-2xl mb-1 text-[#ff5b05]">{mentor.name}</h3>
                 <p className="text-xs uppercase tracking-widest text-[#2000f5] font-extrabold mb-4">{mentor.role}</p>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">{mentor.description}</p>
-                
+
                 {mentor.approvals && (
                   <div className="mb-4">
                     <h4 className="text-[10px] uppercase tracking-widest text-white/50 font-bold mb-2">Aprovações</h4>
