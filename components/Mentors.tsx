@@ -36,13 +36,13 @@ const mentorsList: Mentor[] = [
     name: "Hamilton Vinícius",
     role: "Professor de Matemática - Especialista em ENEM, TRI e análise de desempenho educacional",
     description: "Hamilton é responsável pela leitura técnica dos dados de desempenho, análise de simulados e estruturação de estratégias de estudo baseadas em estatísticas reais do ENEM e vestibulares. Atua diretamente com interpretação de relatórios individuais de desempenho, análise de competências e habilidades, planejamento matemático focado em ganho de nota via TRI, e orientação estratégica sobre tipos de questões, níveis de dificuldade e padrões recorrentes. Na LIGA MED 360, Hamilton conduz as mentorias em Matemática e análise de dados, ajudando o aluno a entender exatamente onde está perdendo pontos e como otimizar sua preparação, transformando números, gráficos e relatórios em decisões práticas de estudo ao longo do ano.",
-    img: "https://picsum.photos/seed/hamilton/400/400"
+    img: "/hamilton.jpg"
   },
   {
     name: "Alysson Luiz",
     role: "Professor de Redação e Ciências Humanas - Mestre em História pela UFMG e Doutor pela USP",
     description: "Alysson é responsável pela estrutura pedagógica de Redação e Humanidades do Áurea, atuando diretamente na formação argumentativa dos alunos e na construção de estratégias alinhadas às competências exigidas nos principais processos seletivos do país. Com ampla experiência em ENEM, Unimontes e vestibulares tradicionais, conduz mentorias individuais focadas em planejamento estratégico de escrita, desenvolvimento de repertório sociocultural produtivo, organização de projetos de texto personalizados, e correção técnica e criteriosa de redações com foco em progressão argumentativa. Na LIGA MED 360, Alysson atua diretamente no acompanhamento individual dos alunos, garantindo que cada estudante compreenda como transformar conhecimento em nota, evitando modelos engessados e desenvolvendo uma escrita autoral, estratégica e consistente ao longo do ano.",
-    img: "https://picsum.photos/seed/alysson/400/400"
+    img: "/alysson.png"
   }
 ];
 
