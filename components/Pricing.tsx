@@ -70,14 +70,12 @@ const plans = [
     name: "QUESTÕES E SIMULADOS",
     description: "Para quem quer só testar, ajustar e evoluir",
     features: [
-      "30 simulados no ano + 3 diagnósticos",
-      "Relatórios individuais em todas aplicações",
-      "30 correções individuais de redação",
-      "Planejamento semanal individual",
-      "Blocos semanais de questões",
-      "Foco ENEM e UNIMONTES",
-      "Mentoria em dados",
-      "Suporte exclusivo"
+      "3 Simulados Diagnósticos: 2 Enem e 1 Unimontes",
+      "30 Simulados no ano: 16 Simulados Enem, todos com RDI: Relatórios de Desempenho Individual em todas as aplicações, indicando evolução e pontos de atenção em TRI",
+      "30 correções presenciais e individuais de Redação",
+      "Planejamento Semanal de Estudos de acordo com as metas e prioridades individuais. Entrega do planejamento todo domingo pela manhã, de forma individualizada",
+      "Bloco de Questões Enem e Unimontes semanal",
+      "Preparação focada no Enem 2026 e Unimontes 2026"
     ],
     price: "990,00",
     installments: "119,00",
