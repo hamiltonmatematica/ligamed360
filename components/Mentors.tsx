@@ -14,7 +14,7 @@ const mentorsList: Mentor[] = [
   {
     name: "Bárbara Layane",
     role: "Acadêmica de Medicina pela Unimontes",
-    description: "Bárbara Layane é acadêmica de Medicina pela Unimontes e possui um histórico sólido de 9 aprovações em Medicina por diferentes processos seletivos, incluindo vestibulares tradicionais, programas de bolsas integrais e sistemas unificados de acesso ao ensino superior. Atua como mentora de estudos especializada em preparação para Medicina, auxiliando vestibulandos na construção de uma rotina eficiente, realista e adaptada à sua realidade individual. Na LIGA MED 360, Bárbara é responsável por orientar os alunos na organização prática dos estudos, ajudando a transformar planejamento em execução consistente, mantendo constância, foco e direção até o momento da aprovação.",
+    description: "9 aprovações em Medicina por diferentes processos seletivos.",
     img: "/barbara_mentora.jpeg",
     approvals: [
       "Unimontes vestibular tradicional",
@@ -35,13 +35,13 @@ const mentorsList: Mentor[] = [
   {
     name: "Hamilton Vinícius",
     role: "Professor de Matemática - Especialista em ENEM, TRI e análise de desempenho educacional",
-    description: "Hamilton é responsável pela leitura técnica dos dados de desempenho, análise de simulados e estruturação de estratégias de estudo baseadas em estatísticas reais do ENEM e vestibulares. Atua diretamente com interpretação de relatórios individuais de desempenho, análise de competências e habilidades, planejamento matemático focado em ganho de nota via TRI, e orientação estratégica sobre tipos de questões, níveis de dificuldade e padrões recorrentes. Na LIGA MED 360, Hamilton conduz as mentorias em Matemática e análise de dados, ajudando o aluno a entender exatamente onde está perdendo pontos e como otimizar sua preparação, transformando números, gráficos e relatórios em decisões práticas de estudo ao longo do ano.",
+    description: "Especialista em ENEM, TRI e análise de desempenho. Responsável pelas mentorias estratégicas em Matemática e leitura de dados dos simulados.",
     img: "/hamilton.jpg"
   },
   {
     name: "Alysson Luiz",
     role: "Professor de Redação e Ciências Humanas - Mestre em História pela UFMG e Doutor pela USP",
-    description: "Alysson é responsável pela estrutura pedagógica de Redação e Humanidades do Áurea, atuando diretamente na formação argumentativa dos alunos e na construção de estratégias alinhadas às competências exigidas nos principais processos seletivos do país. Com ampla experiência em ENEM, Unimontes e vestibulares tradicionais, conduz mentorias individuais focadas em planejamento estratégico de escrita, desenvolvimento de repertório sociocultural produtivo, organização de projetos de texto personalizados, e correção técnica e criteriosa de redações com foco em progressão argumentativa. Na LIGA MED 360, Alysson atua diretamente no acompanhamento individual dos alunos, garantindo que cada estudante compreenda como transformar conhecimento em nota, evitando modelos engessados e desenvolvendo uma escrita autoral, estratégica e consistente ao longo do ano.",
+    description: "Especialista em competências do ENEM e vestibulares tradicionais. Responsável pelas mentorias de Redação, estratégia argumentativa e acompanhamento individual.",
     img: "/alysson.png"
   }
 ];
@@ -72,7 +72,7 @@ const Mentors: React.FC = () => {
                     src={mentor.img}
                     alt={mentor.name}
                     className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-125' :
-                        mentor.name === 'Alysson Luiz' ? 'object-[center_60%]' : ''
+                      mentor.name === 'Alysson Luiz' ? 'object-[center_60%]' : ''
                       }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
