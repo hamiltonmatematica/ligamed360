@@ -99,7 +99,7 @@ const Pricing: React.FC = () => {
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ${plan.highlight ? 'ring-4 ring-[#2000f5]' : 'border border-gray-200'}`}
+              className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ring-4 ${plan.color.replace('bg-', 'ring-')}`}
             >
               <div className={`${plan.color} p-8 text-white`}>
                 <h3 className="font-anton text-2xl mb-2">{plan.name}</h3>
