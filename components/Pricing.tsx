@@ -3,17 +3,21 @@ import React from 'react';
 
 const plans = [
   {
-    name: "TOTAL MED 360",
+    name: "LIGA TOTAL MED 360",
     description: "Preparação completa ENEM + UNIMONTES + UFVJM",
     features: [
-      "Aulas teóricas apenas quando necessárias",
-      "Cursos gratuitos Matemática e Redação",
-      "30 simulados no ano + 3 diagnósticos",
-      "Relatórios de Desempenho Individual",
-      "Mentoria full time Redação e Matemática",
-      "30 correções individuais de redação",
-      "Planejamento individual aos domingos",
-      "Coleção completa ENEM e UNIMONTES"
+      "Aulas Teóricas presenciais ou online planejadas (somente os conteúdos necessários para o aluno a partir do planejamento individual)",
+      "2 Cursos Específicos Gratuitos: Matemática e Redação",
+      "3 Simulados Diagnósticos entre fevereiro e março: 2 Enem e 1 Unimontes Biológicas",
+      "30 Simulados no ano: 16 Simulados Enem; 10 Simulados Unimontes; 2 Simulados UFVJM; 2 Simulados Federais de SP",
+      "Simulados com RDI: Relatórios de Desempenho Individual em todas as aplicações",
+      "Mentoria Full Time Semanal em Redação e Matemática (presencial ou online, de segunda a sexta. É só agendar!)",
+      "30 correções presenciais e individuais de Redação",
+      "Mentoria Liga de Estudos",
+      "Mentoria Semanal com a acadêmica Bárbara Layane (6x aprovada em Medicina), para organização de estudos em todas as matérias",
+      "Planejamento Semanal de Estudos de acordo com as metas e prioridades individuais. Entrega do planejamento todo domingo pela manhã, de forma individualizada",
+      "Coleção de Material de Questões Enem e Unimontes: impresso ou digital (escolha do aluno). Enem: 5 volumes; Unimontes: 3 volumes",
+      "Preparação focada em Enem, Unimontes e UFVJM"
     ],
     price: "4.790,00",
     installments: "519,00",
@@ -89,8 +93,8 @@ const Pricing: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {plans.map((plan, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ${plan.highlight ? 'ring-4 ring-[#2000f5]' : 'border border-gray-200'}`}
             >
               <div className={`${plan.color} p-8 text-white`}>
