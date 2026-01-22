@@ -68,7 +68,13 @@ const Mentors: React.FC = () => {
             {mentorsList.map((mentor, i) => (
               <div key={i} className="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:border-[#2000f5]/50 transition-all">
                 <div className="aspect-[4/4] bg-gray-800 rounded-2xl mb-6 overflow-hidden relative">
-                  <img src={mentor.img} alt={mentor.name} className="w-full h-full object-cover" />
+                  <img
+                    src={mentor.img}
+                    alt={mentor.name}
+                    className={`w-full h-full object-cover ${mentor.name === 'Hamilton Vinícius' ? 'scale-125' :
+                        mentor.name === 'Alysson Luiz' ? 'object-[center_60%]' : ''
+                      }`}
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
                 </div>
                 <h3 className="font-anton text-2xl mb-1 text-[#ff5b05]">{mentor.name}</h3>
