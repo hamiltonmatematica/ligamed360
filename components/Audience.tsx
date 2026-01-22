@@ -17,7 +17,7 @@ const Audience: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-anton text-5xl md:text-6xl mb-8 leading-none">
-              Para quem é a <br/><span className="text-[#2000f5]">LIGA MED 360</span>
+              Para quem é a <br /><span className="text-[#2000f5]">LIGA MED 360</span>
             </h2>
             <div className="space-y-4">
               {points.map((point, i) => (
@@ -34,14 +34,14 @@ const Audience: React.FC = () => {
           </div>
           <div className="relative">
             <div className="aspect-square bg-[#2000f5] rounded-2xl overflow-hidden relative">
-              <img 
-                src="/aprovada.jpeg" 
-                alt="Medicina" 
-                className="w-full h-full object-cover mix-blend-multiply opacity-70"
+              <img
+                src="/aprovada.jpeg"
+                alt="Medicina"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center p-12">
                 <blockquote className="text-4xl font-anton text-white italic text-center">
-                  "O melhor dos <br/>dois mundos"
+                  "O melhor dos <br />dois mundos"
                 </blockquote>
               </div>
             </div>

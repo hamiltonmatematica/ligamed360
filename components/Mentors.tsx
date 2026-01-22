@@ -67,7 +67,7 @@ const Mentors: React.FC = () => {
           <div className="lg:w-3/4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
             {mentorsList.map((mentor, i) => (
               <div key={i} className="group bg-white/5 p-6 rounded-3xl border border-white/10 hover:border-[#2000f5]/50 transition-all">
-                <div className="aspect-[4/4] bg-gray-800 rounded-2xl mb-6 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-500">
+                <div className="aspect-[4/4] bg-gray-800 rounded-2xl mb-6 overflow-hidden relative">
                   <img src={mentor.img} alt={mentor.name} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#150f1d] to-transparent opacity-60"></div>
                 </div>
