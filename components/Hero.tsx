@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="relative hidden lg:block">
-            <div className="aspect-square rounded-2xl overflow-hidden relative">
+            <div className="aspect-square rounded-2xl overflow-hidden relative w-[85%] mx-auto">
               <img
                 src="/aprovada.jpeg"
                 alt="Liga Med 360"
