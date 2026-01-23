@@ -28,7 +28,7 @@ const plans = [
     }
   },
   {
-    name: "MED 360 ENEM",
+    name: "LIGA MED 360 ENEM",
     description: "Preparação focada exclusivamente no ENEM",
     features: [
       "Aulas Teóricas presenciais ou online planejadas (somente os conteúdos necessários para o aluno a partir do planejamento individual)",
@@ -53,7 +53,7 @@ const plans = [
     }
   },
   {
-    name: "MED 360 UNIMONTES",
+    name: "LIGA MED 360 UNIMONTES",
     description: "Preparação específica para a UNIMONTES",
     features: [
       "Aulas Teóricas presenciais ou online planejadas (somente os conteúdos necessários para o aluno a partir do planejamento individual)",
@@ -78,7 +78,7 @@ const plans = [
     }
   },
   {
-    name: "QUESTÕES E SIMULADOS",
+    name: "LIGA QUESTÕES E SIMULADOS",
     description: "Para quem quer só testar, ajustar e evoluir",
     features: [
       "3 Simulados Diagnósticos: 2 Enem e 1 Unimontes",
@@ -107,7 +107,7 @@ const PricingCard = ({ plan }: { plan: typeof plans[0] }) => {
       className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ring-4 ${plan.color.replace('bg-', 'ring-')}`}
     >
       <div className={`${plan.color} p-8 text-white`}>
-        <h3 className="font-anton text-2xl mb-2">{plan.name}</h3>
+        <h3 className="font-anton text-2xl mb-2 min-h-[4rem] flex items-start">{plan.name}</h3>
         <p className="text-sm opacity-80 leading-tight h-10">{plan.description}</p>
       </div>
       <div className="p-8 flex-1 flex flex-col bg-white">
