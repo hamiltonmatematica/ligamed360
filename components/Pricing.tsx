@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 
 const plans = [
   {
@@ -22,7 +21,11 @@ const plans = [
     price: "4.790,00",
     installments: "519,00",
     highlight: true,
-    color: "bg-[#2000f5]"
+    color: "bg-[#2000f5]",
+    links: {
+      cash: "https://www.asaas.com/c/d3drsrtk5zzp3d53",
+      installments: "https://www.asaas.com/c/de73ujhm92we3kwp"
+    }
   },
   {
     name: "MED 360 ENEM",
@@ -43,7 +46,11 @@ const plans = [
     price: "3.790,00",
     installments: "419,00",
     highlight: false,
-    color: "bg-[#150f1d]"
+    color: "bg-[#150f1d]",
+    links: {
+      cash: "https://www.asaas.com/c/6mzvframqvljan3z",
+      installments: "https://www.asaas.com/c/0veftvxrid526azp"
+    }
   },
   {
     name: "MED 360 UNIMONTES",
@@ -64,7 +71,11 @@ const plans = [
     price: "2.790,00",
     installments: "319,00",
     highlight: false,
-    color: "bg-[#150f1d]"
+    color: "bg-[#150f1d]",
+    links: {
+      cash: "https://www.asaas.com/c/pfmtk6ko91n0a2tx",
+      installments: "https://www.asaas.com/c/wsk2fyt3nlj1mb2c"
+    }
   },
   {
     name: "QUESTÕES E SIMULADOS",
@@ -80,9 +91,71 @@ const plans = [
     price: "990,00",
     installments: "119,00",
     highlight: false,
-    color: "bg-[#ff5b05]"
+    color: "bg-[#ff5b05]",
+    links: {
+      cash: "https://www.asaas.com/c/de0bd59ny6djye8r",
+      installments: "https://www.asaas.com/c/uv168dyhqxbovgpf"
+    }
   }
 ];
+
+const PricingCard = ({ plan }: { plan: typeof plans[0] }) => {
+  const [showOptions, setShowOptions] = useState(false);
+
+  return (
+    <div
+      className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ring-4 ${plan.color.replace('bg-', 'ring-')}`}
+    >
+      <div className={`${plan.color} p-8 text-white`}>
+        <h3 className="font-anton text-2xl mb-2">{plan.name}</h3>
+        <p className="text-sm opacity-80 leading-tight h-10">{plan.description}</p>
+      </div>
+      <div className="p-8 flex-1 flex flex-col bg-white">
+        <ul className="space-y-4 mb-10 flex-1">
+          {plan.features.map((feature, idx) => (
+            <li key={idx} className="flex items-start gap-3 text-sm">
+              <span className="text-[#ff5b05] font-bold">✔</span>
+              <span className="text-gray-700">{feature}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="border-t border-gray-100 pt-8 mt-auto">
+          <p className="text-gray-400 text-sm mb-1">Investimento à vista</p>
+          <p className="text-3xl font-anton text-[#150f1d] mb-4">R$ {plan.price}</p>
+          <p className="text-gray-600 text-sm mb-6">ou 10x de <span className="text-[#ff5b05] font-extrabold text-xl">R$ {plan.installments}</span></p>
+
+          {!showOptions ? (
+            <button
+              onClick={() => setShowOptions(true)}
+              className={`w-full py-4 rounded-md font-anton text-xl transition-colors ${plan.highlight ? 'bg-[#2000f5] text-white hover:bg-[#150f1d]' : 'bg-[#150f1d] text-white hover:bg-[#ff5b05]'}`}
+            >
+              SELECIONAR
+            </button>
+          ) : (
+            <div className="flex flex-col gap-2 animation-fade-in">
+              <a
+                href={plan.links.cash}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center py-3 rounded-md font-anton text-lg bg-[#2000f5] text-white hover:bg-[#150f1d] transition-colors"
+              >
+                À VISTA
+              </a>
+              <a
+                href={plan.links.installments}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center py-3 rounded-md font-anton text-lg bg-[#150f1d] text-white hover:bg-[#ff5b05] transition-colors"
+              >
+                PARCELADO
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Pricing: React.FC = () => {
   return (
@@ -97,38 +170,11 @@ const Pricing: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {plans.map((plan, i) => (
-            <div
-              key={i}
-              className={`flex flex-col rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 hover:-translate-y-4 ring-4 ${plan.color.replace('bg-', 'ring-')}`}
-            >
-              <div className={`${plan.color} p-8 text-white`}>
-                <h3 className="font-anton text-2xl mb-2">{plan.name}</h3>
-                <p className="text-sm opacity-80 leading-tight h-10">{plan.description}</p>
-              </div>
-              <div className="p-8 flex-1 flex flex-col bg-white">
-                <ul className="space-y-4 mb-10 flex-1">
-                  {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm">
-                      <span className="text-[#ff5b05] font-bold">✔</span>
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="border-t border-gray-100 pt-8 mt-auto">
-                  <p className="text-gray-400 text-sm mb-1">Investimento à vista</p>
-                  <p className="text-3xl font-anton text-[#150f1d] mb-4">R$ {plan.price}</p>
-                  <p className="text-gray-600 text-sm mb-6">ou 10x de <span className="text-[#ff5b05] font-extrabold text-xl">R$ {plan.installments}</span></p>
-                  <button className={`w-full py-4 rounded-md font-anton text-xl transition-colors ${plan.highlight ? 'bg-[#2000f5] text-white hover:bg-[#150f1d]' : 'bg-[#150f1d] text-white hover:bg-[#ff5b05]'}`}>
-                    SELECIONAR
-                  </button>
-                </div>
-              </div>
-            </div>
+            <PricingCard key={i} plan={plan} />
           ))}
         </div>
       </div>
     </section>
   );
 };
-
 export default Pricing;
